@@ -1,0 +1,97 @@
+@import url(function.css);
+main {
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  /* background: #000; */
+}
+main > .card {
+  width: 305px;
+  height: 480px;
+ 
+}
+.card > .img-detail {
+  width: 100%;
+  height: 75%;
+  background-color: blanchedalmond;
+  cursor: pointer;
+  position: relative;
+}
+.fa-cart-shopping:hover + .add_cart{
+  display: block;
+}
+
+.img-detail >  .add_cart {
+  display: none;
+  width: 110px;
+  padding: 10px 15px;
+  background-color: gray;
+  position: relative;
+  position: absolute;
+  top: 10px;
+  right: 50px;
+
+}
+
+
+
+#icon:hover + .add_cart{
+  display: block;
+}
+
+
+.add_cart > .clippy {
+  width: 15px;
+  height: 10px;
+  background-color: black;
+  position: absolute;
+  top: 15px;
+  right: -15px;
+  clip-path: polygon(0% 0%, 0 0, 100% 50%, 0 100%, 0% 100%);
+  
+}
+
+.img-detail > .fa-cart-shopping{
+   position: absolute;
+   top: 20px;
+   right: 10px;
+   font-size: 20px;
+   color: rgb(90, 91, 91);
+   display: none;
+}
+
+.img-detail:hover > .fa-cart-shopping{
+  display: block;
+}
+
+
+
+
+
+
+
+.img-detail > img {
+   width: 100%;
+   height: 100%;
+}
+.card > .description {
+  width: 100%;
+  height: 25%;
+  box-shadow: 1px 1px 5px rgb(238, 235, 235);
+  
+  padding: 15px 5px;
+}
+.description .title {
+  font-size: 20px;
+}
+.description > .star {
+  margin-top: 10px;
+}
+.description > p {
+   color: rgb(10, 10, 10);
+   font-size: 20px;
+}
